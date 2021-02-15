@@ -54,7 +54,7 @@ void InputFile::removeAllPunctuation()
 	string puncMarks[] = {".", ",", "!", "\"", "\'", ";", 
 						  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
 	
-	for(int i = 0;i < 15;i++)
+	for(int i = 0;i < 15;i++)                                    //Why hardcode 15 and not just use the length of puncMarks
 	{
 		removePunctuation(puncMarks[i]);
 	}
@@ -83,7 +83,7 @@ void InputFile::makeLowerCase()
 		int stringSize = fileContents[i].size();
 		for(int j = 0;j < stringSize;j++)
 		{
-			fileContents[i].at(j) = tolower(fileContents[j].at(j));
+			fileContents[i].at(j) = tolower(fileContents[j].at(j));                     //Should be fileContents[i].at[j]
 		}
 	}
 }
