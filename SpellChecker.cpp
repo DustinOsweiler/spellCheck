@@ -158,7 +158,7 @@ void SpellChecker::characterReplace(string w,
                 addWordToList(words, tempString);
             }
         }
-    }
+    }                                    //What happens if you misspell a word and it goes through and replaces it and spells a different word or have multiple spelling errors
 }
 //***************************************************************
 void SpellChecker::addWordToList(vector < string >& words,
@@ -173,7 +173,7 @@ void SpellChecker::addWordToList(vector < string >& words,
         if(words[i].compare(w) == 0)
         {
             add = false;
-        }
+        }                                   //to speed things up you should exit the for loop once the word is found in the dictionary
     }
     if(add)//if we should add then push it on the vector
     {
