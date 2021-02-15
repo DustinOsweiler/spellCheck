@@ -23,7 +23,7 @@ Dictionary::~Dictionary()
 	{
 		cout<<"Writing a new file back to the dictionary"<<endl;
 		ofstream outfile(getDictionaryFilename().c_str());
-		for(int i = 0;i < getOrigDictionarySize();i++)
+		for(int i = 0;i < getOrigDictionarySize();i++)             //I think this should be dictionary.size(), not sure
 		{
 		outfile<<dictionary[i]<<endl;
 		}
@@ -72,3 +72,5 @@ void Dictionary::addWordToDictionary(const string w)
 {
 	dictionary.push_back(w);
 }
+
+                                                        //No comments
