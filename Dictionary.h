@@ -24,7 +24,7 @@ public:
 	int getNumWords() {return dictionary.size();}
 	string getWord(int i) {return dictionary[i];}
 private:
-    //most common words in english language
+    //most common words in english language             What does this have to do with this?
     vector < string > dictionary;
 	string dictionaryFilename;
 	int origDictionarySize;
