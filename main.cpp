@@ -38,7 +38,7 @@ int main()
 		if(response == '1')
 		{
 			//ask the spellchecker to add a word
-			sc.addAWord();
+			sc.addAWord();                                 //No checking to see if the word already is in dictionary
 		}
 		else if(response == '2') //do a spellcheck
 		{
